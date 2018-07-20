@@ -41,12 +41,7 @@ TestResult.xml
 **/packages/
 **/bin/
 **/obj/
-**/TestResults/
-!/source/shell/bvmgfinance/bin
-!/source/shell/bvmggod/bin
-!/source/shell/dmg/bin
-!/source/shell/mrd/bin
-!/source/shell/mvp/bin
+
 
 ###################
 # Web publish log #
@@ -96,17 +91,4 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
-/source/dotnet/dnote-web/DNOTE.Web/App_Data/error-2017-04-20164342Z-4e05bad7-d29d-4a56-803f-297c06349103.xml
-/source/dotnet/mvp-web/MVP.Web/App_Data
-
-data/sql-server/bvmgfinance/bvmgfinance\.jfm
-
-data/sql-server/bvmggod/bvmggod\.jfm
-
-data/sql-server/mvp/mvp\.jfm
-
-data/sql-server/saptransfer/saptransfer\.jfm
-
-data/sql-server/webobjects/
-/source/dotnet/dnote-web/DNOTE.Web/App_Data
 *.ini
