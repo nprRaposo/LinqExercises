@@ -1,0 +1,45 @@
+<div id="newSplit" style="display:none">
+    <script id="work-new-split-template" type="text/x-handlebars-template">
+        <tbody class="work-split" data-split-id="{{SplitId}}" data-sort-order="{{SortOrder}}">
+            <tr class="publisher-split" data-split-id="{{SplitId}}" data-split-row-id="{{PublisherRowId}}">
+                <td class="td-split-check no-bg col-xs-1 text-left">
+                    <input type="checkbox" class="split-check">
+                </td>
+                <td class="publisher-split-publisher col-xs-4 no-bg">
+                    <a id="PublisherName-{{SplitId}}" data-type="select2" data-title="Publisher Name" tabindex="1" data-value="{{PublisherId}}" class="work-splits-field work-split-publisher">{{Name}}</a>
+                </td>
+                <td class="col-xs-1 no-bg">
+                    <span id="PublisherPRO-{{SplitId}}">{{PROName}}</span>
+                </td>
+                <td class="text-center col-xs-1 no-bg">
+					<span id="PublisherIsDisneyInternal-{{SplitId}}">{{IsDisneyInternal}}</span>
+                </td>
+                <td colspan="3" class="col-xs-4 no-bg">
+                    <a id="PublisherWorkCode-{{SplitId}}" data-type="text" data-title="Publiser Work Code" class="work-splits-field work-split-publisher-work-code editable editable-click">{{PublisherWorkCode}}</a>
+					<a id="PublisherWorkCode-{{SplitId}}" data-type="text" data-title="Publisher Work Code" data-name="PublisherWorkCode" class="work-splits-field work-split-publisher-work-code fieldtextbox publisherworkcode">{{PublisherWorkCode}}</a>
+
+                </td>
+                <td></td>
+                <td class="text-right">
+                    <a id="Share-{{SplitId}}" data-type="text" data-title="Publisher Nanme" tabindex="1" class="work-splits-field work-split-share editable editable-click"> {{percentage Share}}</a>
+                </td>
+                <td>
+                    @Html.Partial("_SplitDropdown")
+                </td>
+            </tr>
+            <tr data-split-id="{{SplitId}}">
+                <td colspan="1" class="no-border td-split-check"></td>
+                <td colspan="1" class="writer-split-header no-border text-light-gray">
+                    <i data-split-id="{{SplitId}}" class="fa fa-chevron-down"></i>
+                    <span class="padding-xs-hr">Writers {{#if Writers.length}}({{Writers.length}}){{/if}}</span>
+                </td>
+                <td colspan="2" class="no-border text-light-gray">
+                    <span>Role</span>
+                </td>
+                <td colspan="2" class="no-border text-light-gray">
+                    <span>Royalty Bearing</span>
+                </td>
+            </tr>
+        </tbody>
+    </script>
+</div>
